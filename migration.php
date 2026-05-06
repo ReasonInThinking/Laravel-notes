@@ -3,7 +3,7 @@ Create Two Files | app/Models/Article.php | database/migrations/xxxx_create_arti
 php artisan make:model Article -m
 
 
-
+---------------
 
 # Two
 Table for Migration 
@@ -37,12 +37,19 @@ return new class extends Migration
         Schema::dropIfExists('articles');
     }
 };
+?>
+
+---------------
+
+# Three
+Migrate
+
+/opt/lampp/bin/php artisan migrate
+
+-------------------
 
 
-
-
-
-# Three 
+# Four
 
 Setting up columns available to users
 app/Models/Article.php
@@ -58,9 +65,10 @@ class Article extends Model
 {
     protected $fillable = ['title', 'content'];
 }
+?>
 
-#Four
+-----------
 
----
+
 
 
