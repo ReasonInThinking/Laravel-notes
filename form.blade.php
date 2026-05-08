@@ -13,5 +13,8 @@
     {{--  Cross-Site Request Forgery --}}
     @csrf
     <input type="text" name="mood" value="{{ old('mood') }}" placeholder="hello">
+    @error('mood')
+    <div style="color: red;">{{ $message }}</div>
+@enderror
     <button type="submit">Click</button>
 </form>
