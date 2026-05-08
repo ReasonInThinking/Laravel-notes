@@ -15,6 +15,6 @@
     <input type="text" name="mood" value="{{ old('mood') }}" placeholder="hello">
     @error('mood')
     <div style="color: red;">{{ $message }}</div>
-@enderror
+    @enderror
     <button type="submit">Click</button>
 </form>
